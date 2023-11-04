@@ -22,11 +22,14 @@ CREATE TABLE user_post (
     post_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES user (user_id),
     body_of_water VARCHAR(255) NOT NULL,
+    post_town VARCHAR(255) NOT NULL,
+    post_state VARCHAR(255) NOT NULL,
     date_ TIMESTAMPTZ NOT NULL,
     photo_url TEXT,
     fish_species VARCHAR(50),
     latitude DECIMAL(9, 6) NOT NULL,
     longitude DECIMAL(9, 6) NOT NULL
+
 );
 
 
