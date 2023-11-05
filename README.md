@@ -18,22 +18,22 @@ locations and share their love for angling. Discover the nation's top fishing sp
  ![Screenshot 2023-11-05 114335](https://github.com/kyrollos2/HackNJIT/assets/149887130/b304e946-cab6-4ee9-a6cf-a35608ef10a9)
 
  
-Discover Top Fishing Spots: Explore carefully selected locations for an unforgettable angling experience.
+- Discover Top Fishing Spots: Explore carefully selected locations for an unforgettable angling experience.
 
-Real-time Weather Updates: Stay prepared with accurate weather forecasts and conditions.
+- Real-time Weather Updates: Stay prepared with accurate weather forecasts and conditions.
 
-Precise GPS Coordinates: Navigate directly to your chosen spot with latitude and longitude details.
+- Precise GPS Coordinates: Navigate directly to your chosen spot with latitude and longitude details.
 
-Community-Powered Catches: Share your successes and explore fellow anglers' catches, fostering camaraderie.
+- Community-Powered Catches: Share your successes and explore fellow anglers' catches, fostering camaraderie.
 
-FishFinder is your community-driven angling companion. Download now and embark on a journey to America's finest fishing spots.
+- FishFinder is your community-driven angling companion. Download now and embark on a journey to America's finest fishing spots.
 
-Note: FishFinder requires an internet connection for real-time updates and community interactions.
+#Note: FishFinder requires an internet connection for real-time updates and community interactions.
 
 
 # Technology used in the process 
 
-- <b><i><u>FIGMA</b></i></u>: we used figma to make the front end of the FISHBOOK app
+- FIGMA: we used figma to make the front end of the FISHBOOK app
 
 - ProstgreSQL: Using object-oriented features of PostgreSQL, programmers can communicate with the database servers using objects in their code. Define complex, custom data types.
 
