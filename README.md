@@ -33,7 +33,7 @@ Note: FishFinder requires an internet connection for real-time updates and commu
 
 # Technology used in the process 
 
-- FIGMA: we used figma to make the front end of the FISHBOOK app
+- <b><i><u>FIGMA</b></i></u>: we used figma to make the front end of the FISHBOOK app
 
 - ProstgreSQL: Using object-oriented features of PostgreSQL, programmers can communicate with the database servers using objects in their code. Define complex, custom data types.
 
