@@ -3,11 +3,12 @@ fishing-stop
 
 <div style="display: flex; justify-content: space-between;">
   <img src="./screens/InitialPage.png" height="400" width="250" style="margin-right: 10px;">
-  <img src="./screens/FishBookPage.png" height="400" width="200">
+  <img src ="./screens/InitialPage.png" height="400" width="250" style="margin-right: 10px;">
+  <img src="./screens/Login_Page.png" height="400" width="200">
 </div>
 
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
-[Screenshot 2023-11-05 112949](https://github.com/kyrollos2/HackNJIT/assets/149887130/fab43597-4057-43f1-ad23-da65cbda31a5)
+
 
 Fish Book is the definitive app for passionate fishermen across the United States. This app helps fishermen explore prime fishing!
 
