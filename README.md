@@ -14,7 +14,7 @@ Fish Book is the definitive app for passionate fishermen across the United State
 
 
 
-<b><ins>Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.</b></ins>
+<b><ins>Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.</ins>
 
 
  ![Screenshot 2023-11-05 114335](https://github.com/kyrollos2/HackNJIT/assets/149887130/b304e946-cab6-4ee9-a6cf-a35608ef10a9)
@@ -57,7 +57,7 @@ Fish Book is the definitive app for passionate fishermen across the United State
 
 - <ins>import string</ins>: The Python string module provides several constants that are useful for checking to see if a character, slice, or string contains letters, digits, symbols, etc. To use these constants, we need to import the module into our code.
 
-- <ins>import geopandas as gpd<ins>: GeoPandas is an open source project to make working with geospatial data in Python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
+- <ins>import geopandas as gpd</ins>: GeoPandas is an open source project to make working with geospatial data in Python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
 
 - <ins>import csv</ins>: The Import-Csv cmdlet creates table-like custom objects from the items in CSV files.
 
