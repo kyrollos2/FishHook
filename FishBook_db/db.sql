@@ -1,5 +1,5 @@
 
-CREATE TABLE user_ (  
+CREATE TABLE user_ (       """ this is a line of code that creates a table specific to user information."""
     user_id SERIAL PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE user_ (
 );
 
 
-CREATE TABLE user_followers (
+CREATE TABLE user_followers (     """ this is a line of code that creates a table specific to the followers a user has."""
     follower_id INT,
     followee_id INT,
     PRIMARY KEY (follower_id, followee_id),
@@ -17,7 +17,7 @@ CREATE TABLE user_followers (
 );
 
 
-CREATE TABLE user_post (
+CREATE TABLE user_post (      """ this is a line of code that creates a table specific to the user posts."""
     post_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES user_ (user_id),
     body_of_water VARCHAR(255) NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE user_post (
 );
 
 
-CREATE TABLE post_comments (
+CREATE TABLE post_comments (     """ this is a line of code that creates a table specific to the comments that are created on the post."""
     comment_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES user_ (user_id),
     post_id INT REFERENCES user_post (post_id),
@@ -41,7 +41,7 @@ CREATE TABLE post_comments (
 );
 
 
-CREATE TABLE weather_report (
+CREATE TABLE weather_report (    """ this is a line of code that creates a table specific to the weather data on that specific fishing spot on the map."""
     report_id SERIAL PRIMARY KEY,
     post_id INT REFERENCES user_post (post_id),
     date_ TIMESTAMPTZ NOT NULL,
@@ -52,14 +52,14 @@ CREATE TABLE weather_report (
 );
 
 
-CREATE TABLE body_of_water (
+CREATE TABLE body_of_water (    """ this is a line of code that creates a table specific to the body of water, it latitude and logitudenal location on the map."""
     body_id SERIAL PRIMARY KEY,
     body_name VARCHAR(255) NOT NULL,
     latitude DECIMAL(9, 6) NOT NULL,
     longitude DECIMAL(9, 6) NOT NULL
 );
 
-CREATE TABLE fishing_catch_report (
+CREATE TABLE fishing_catch_report (    """ this is a line of code that creates a table specific to the fishing cath report of the user."""
     catch_id SERIAL PRIMARY KEY,
     post_id INT REFERENCES user_post (post_id),
     date_ TIMESTAMPTZ NOT NULL,
@@ -84,3 +84,7 @@ CREATE INDEX idx_fishing_catch_report_fish_species ON fishing_catch_report (fish
 CREATE INDEX idx_fishing_catch_report_weather_condition ON fishing_catch_report (weather_condition);
 CREATE INDEX idx_fishing_catch_report_temperature ON fishing_catch_report (temperature);
 CREATE INDEX idx_body_of_water_coordinates ON body_of_water (latitude, longitude);
+
+"""indexes on specific columns of the tables to optimize query performance for commonly used search conditions. Indexes are 
+    created on user_post, weather_report, fishing_catch_report, and body_of_water tables to speed up 
+    queries involving user IDs, coordinates, dates, fish species, weather conditions, and temperatures."""
