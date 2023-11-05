@@ -18,17 +18,17 @@ Fish Book is the definitive app for passionate fishermen across the United State
  ![Screenshot 2023-11-05 114335](https://github.com/kyrollos2/HackNJIT/assets/149887130/b304e946-cab6-4ee9-a6cf-a35608ef10a9)
 
  
-- Discover Top Fishing Spots: Explore carefully selected locations for an unforgettable angling experience.
+- <ins>Discover Top Fishing Spots</ins>: Explore carefully selected locations for an unforgettable angling experience.
 
-- Real-time Weather Updates: Stay prepared with accurate weather forecasts and conditions.
+- <ins>Real-time Weather Updates</ins>: Stay prepared with accurate weather forecasts and conditions.
 
-- Precise GPS Coordinates: Navigate directly to your chosen spot with latitude and longitude details.
+- <ins>Precise GPS Coordinates</ins>: Navigate directly to your chosen spot with latitude and longitude details.
 
-- Community-Powered Catches: Share your successes and explore fellow anglers' catches, fostering camaraderie.
+- <ins>Community-Powered Catches</ins>: Share your successes and explore fellow anglers' catches, fostering camaraderie.
 
-- FishFinder is your community-driven angling companion. Download now and embark on a journey to America's finest fishing spots.
+<b>FishFinder is your community-driven angling companion. Download now and embark on a journey to America's finest fishing spots!</b>
 
-# Note: FishFinder requires an internet connection for real-time updates and community interactions.
+<b><i><ins>Note: FishFinder requires an internet connection for real-time updates and community interactions. </b></i></ins>
 
 
 # Technology used in the process 
