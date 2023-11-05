@@ -1,5 +1,8 @@
 # HackNJIT
 fishing-stop
+
+![alt text](https://github.com/kyrollos2/HackNJIT/blob/main/screens/FishBookPage.png)
+
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
 
 Fish Book is the definitive app for passionate fishermen across the United States. This app helps fishermen explore prime fishing!
