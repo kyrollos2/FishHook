@@ -12,6 +12,8 @@ fishing-stop
 
 Fish Book is the definitive app for passionate fishermen across the United States. This app helps fishermen explore prime fishing locations and share their love for angling! 
 
+
+
 <b><ins>Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.</b></ins>
 
 
@@ -43,7 +45,7 @@ Fish Book is the definitive app for passionate fishermen across the United State
 
 - <ins>AWS EC2</ins>: Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is part of Amazon Web Services (AWS)
 
-- AWS Lambda: It was used for hybrid scaling
+- <ins>AWS Lambda</ins>: It was used for hybrid scaling
 
 # Data
 
