@@ -1,5 +1,5 @@
 
-CREATE TABLE user (
+CREATE TABLE user_ (  
     user_id SERIAL PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -12,14 +12,14 @@ CREATE TABLE user_followers (
     follower_id INT,
     followee_id INT,
     PRIMARY KEY (follower_id, followee_id),
-    FOREIGN KEY (follower_id) REFERENCES user(user_id),
-    FOREIGN KEY (followee_id) REFERENCES user(user_id)
+    FOREIGN KEY (follower_id) REFERENCES user_(user_id),
+    FOREIGN KEY (followee_id) REFERENCES user_(user_id)
 );
 
 
 CREATE TABLE user_post (
     post_id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES user (user_id),
+    user_id INT REFERENCES user_ (user_id),
     body_of_water VARCHAR(255) NOT NULL,
     post_town VARCHAR(255) NOT NULL,
     post_state VARCHAR(255) NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE user_post (
 
 CREATE TABLE post_comments (
     comment_id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES user (user_id),
+    user_id INT REFERENCES user_ (user_id),
     post_id INT REFERENCES user_post (post_id),
     comment VARCHAR(255) NOT NULL,
     comment_date TIMESTAMPTZ NOT NULL
