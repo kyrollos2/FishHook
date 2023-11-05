@@ -1,5 +1,5 @@
 # HackNJIT
-fishing-stop
+## All Things Fishing In One
 
 <div style="display: flex; justify-content: space-between;">
   <img src="./screens/InitialPage.png" height="400" width="250" style="margin-right: 10px;">
