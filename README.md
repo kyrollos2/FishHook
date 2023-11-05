@@ -3,6 +3,7 @@ fishing-stop
 
 <div style="display: flex; justify-content: space-between;">
   <img src="./screens/InitialPage.png" height="400" width="250" style="margin-right: 10px;">
+  <img src="./screens/MapPage.png" height="400" width="250" style="margin-right: 10px;">
   <img src="./screens/FishBookPage.png" height="400" width="200">
 </div>
 
