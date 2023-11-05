@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg2  """Import using a import psycopg2 statement so you can communicate with the PostgreSQL database."""
 
 
 
