@@ -2,7 +2,7 @@
 fishing-stop
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="./screens/InitialPage.png" width="400" style="margin-right: 10px;">
+  <img src="./screens/InitialPage.png" width="250" style="margin-right: 10px;">
   <img src="./screens/FishBookPage.png" width="200">
 </div>
 
