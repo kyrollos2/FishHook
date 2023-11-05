@@ -3,7 +3,6 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import SplashScreen from "./screens/SplashScreen";
-import EnterName from "./screens/EnterName";
 import SignUp from "./screens/SignUp";
 import ForgotPassword from "./screens/ForgotPassword";
 import LogIn from "./screens/LogIn";
