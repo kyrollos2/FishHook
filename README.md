@@ -42,3 +42,5 @@ AWS EC2: Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provide
 
 # Data
 
+import psycopg2  """Import using a import psycopg2 statement so you can communicate with the PostgreSQL database."""
+
