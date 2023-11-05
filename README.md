@@ -1,7 +1,7 @@
 # HackNJIT
 fishing-stop
 
-![alt text](https://github.com/kyrollos2/HackNJIT/blob/main/screens/FishBookPage.png)
+<img src="https://github.com/kyrollos2/HackNJIT/blob/main/screens/FishBookPage.png" width="128"/>
 
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
 
