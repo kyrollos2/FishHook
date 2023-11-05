@@ -4,8 +4,7 @@ CREATE TABLE user (
     email VARCHAR(255) UNIQUE NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
     password_hash VARCHAR(64) NOT NULL,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50)
+    profile_photo_url TEXT
 );
 
 
