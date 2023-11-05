@@ -3,6 +3,7 @@ import random
 from faker import Faker
 import psycopg2
 from psycopg2 import sql
+from psycopg2 import IntegrityError  # Import IntegrityError
 
 f = Faker()
 
@@ -21,9 +22,6 @@ def generate_email(username):
 def generate_password(length=8):
     characters = string.ascii_letters  # Only letters (both uppercase and lowercase)
     return ''.join(random.choice(characters) for _ in range(length))
-   
-
-   
 
 def generate_profile_photo_url():
     # You can customize this function to generate random URLs for profile photos.
@@ -49,16 +47,20 @@ def generate_user_data():
 
 def insert_users(conn, cursor, users_data):
     for user in users_data:
-        insert_query = sql.SQL("""
-            INSERT INTO user_ (email, username, password_hash, profile_photo_url)
-            VALUES (%s, %s, %s, %s)
-        """)
-        cursor.execute(insert_query, (
-            user['email'],
-            user['username'],
-            user['password_hash'],
-            user['profile_photo_url'],
-        ))
+        try:
+            insert_query = sql.SQL("""
+                INSERT INTO user_ (email, username, password_hash, profile_photo_url)
+                VALUES (%s, %s, %s, %s)
+            """)
+            cursor.execute(insert_query, (
+                user['email'],
+                user['username'],
+                user['password_hash'],
+                user['profile_photo_url'],
+            ))
+        except IntegrityError:
+            # Handle the IntegrityError (e.g., by generating a new data point)
+            pass
 
 def main():
     conn = psycopg2.connect(

@@ -1,12 +1,10 @@
-import psycopg2  """Import using a import psycopg2 statement so you can communicate with the PostgreSQL database."""
-
-
+import psycopg2  
 
 def get_user_posts(conn, user_id):
     try:
         cursor = conn.cursor()
-        select_query = "SELECT date_, latitude, longitude, fish_species FROM user_post WHERE user_id = %s;"  """pulls out date, lat, long from the"""
-        cursor.execute(select_query, (user_id,))                                               """user posts by connecting the where the user is on the map"""
+        select_query = "SELECT date_, latitude, longitude, fish_species FROM user_post WHERE user_id = %s;"  
+        cursor.execute(select_query, (user_id,))                                               
         user_posts = cursor.fetchall()
         return user_posts
     except Exception as e:
@@ -19,7 +17,7 @@ def get_weather_reports(conn, date_, latitude, longitude):
     try:
         cursor = conn.cursor()
         select_query = "SELECT temperature, weather_condition FROM weather_report WHERE date_ = %s AND latitude = %s AND longitude = %s;"
-        cursor.execute(select_query, (date_, latitude, longitude))    """"""pulls out temperature and weather from the latitude and longitude"""
+        cursor.execute(select_query, (date_, latitude, longitude))  
         weather_reports = cursor.fetchall()
         return weather_reports
     except Exception as e:
@@ -31,7 +29,9 @@ def get_body_of_water(conn, latitude, longitude):
         select_query = "SELECT body_name FROM body_of_water WHERE latitude = %s AND longitude = %s;"
         cursor.execute(select_query, (latitude, longitude))
         body_of_water = cursor.fetchone() 
-        return body_of_water  """ It executes an SQL query to select body_name from the body_of_water table where latitude and longitude match the provided inputs"""
-    except Exception as e:
+        return body_of_water 
         raise e
+    except psycopg2.Error as e:
+        print(f"Error retrieving body of water: {e}")
+        return None
 
