@@ -4,7 +4,7 @@ fishing-stop
 <div style="display: flex; justify-content: space-between;">
   <img src="./screens/InitialPage.png" height="400" width="250" style="margin-right: 10px;">
   <img src ="./screens/Login_Page.png" height="400" width="250" style="margin-right: 10px;">
-  <img src="./screens/FishBookPage.png" height="400" width="200">
+  <img src="./screens/FishBookPage.png" height="400" width="250" style = "margin-right: 10px;">
 </div>
 
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
