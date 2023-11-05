@@ -56,9 +56,9 @@ for _ in range(20000):
 conn = psycopg2.connect(
     dbname='fish-1',
     user='postgres',
-    password='Pratorian123',
+    password='Pratorian123$',
     host='fish-1.cluster-cx0sld70xbt6.us-east-1.rds.amazonaws.com',
-    port='5342'
+    port='5432'
 )
 
 
