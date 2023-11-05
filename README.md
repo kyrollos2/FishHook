@@ -2,7 +2,9 @@
 fishing-stop
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
 
-Fish Book is the definitive app for passionate fishermen across the United States. This app helps fishermen explore prime fishing locations and share their love for angling. Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.
+Fish Book is the definitive app for passionate fishermen across the United States. This app helps fishermen explore prime fishing!
+[Screenshot 2023-11-05 112949](https://github.com/kyrollos2/HackNJIT/assets/149887130/fab43597-4057-43f1-ad23-da65cbda31a5)
+ locations and share their love for angling. Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.
 
 Discover Top Fishing Spots: Explore carefully selected locations for an unforgettable angling experience.
 
@@ -18,4 +20,6 @@ Note: FishFinder requires an internet connection for real-time updates and commu
 
 
 # technology used in the process 
+
+multiple libraries of map, weather, longitude, and latitude were used to make the app work with all that data
 
