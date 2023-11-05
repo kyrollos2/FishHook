@@ -48,11 +48,6 @@ const App = () => {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="EnterName"
-              component={EnterName}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
               name="SignUp"
               component={SignUp}
               options={{ headerShown: false }}
