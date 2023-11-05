@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3       #This will import the sqlite3 module into your Python program. You can then use this module to create and interact with SQLite databases.
 # Having trouble pushing from VS code so I copied it myself
 # Open the file for reading
 with open("data.txt", "r") as file:
