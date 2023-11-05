@@ -1,8 +1,10 @@
 # HackNJIT
 fishing-stop
 
-<img src="./screens/InitialPage.png" width="200"/>
-<img src="./screens/FishBookPage.png" width="200"/>
+<div style="display: flex; justify-content: space-between;">
+  <img src="./screens/InitialPage.png" width="200" style="margin-right: 10px;">
+  <img src="./screens/FishBookPage.png" width="200">
+</div>
 
 # Introducing Fish Book: Your Ultimate Guide to America's Premier Fishing Spots
 
