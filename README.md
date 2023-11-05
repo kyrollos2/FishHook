@@ -28,7 +28,7 @@ Fish Book is the definitive app for passionate fishermen across the United State
 
 - FishFinder is your community-driven angling companion. Download now and embark on a journey to America's finest fishing spots.
 
-#Note: FishFinder requires an internet connection for real-time updates and community interactions.
+# Note: FishFinder requires an internet connection for real-time updates and community interactions.
 
 
 # Technology used in the process 
