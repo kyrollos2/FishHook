@@ -14,7 +14,7 @@ Fish Book is the definitive app for passionate fishermen across the United State
 
 
 
-<b><ins>Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.</ins>
+<b><ins>Discover the nation's top fishing spots, access real-time weather updates and precise GPS coordinates, and engage with a vibrant fishing community.</ins></b>
 
 
  ![Screenshot 2023-11-05 114335](https://github.com/kyrollos2/HackNJIT/assets/149887130/b304e946-cab6-4ee9-a6cf-a35608ef10a9)
