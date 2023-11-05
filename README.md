@@ -31,31 +31,31 @@ FishFinder is your community-driven angling companion. Download now and embark o
 Note: FishFinder requires an internet connection for real-time updates and community interactions.
 
 
-# technology used in the process 
+# Technology used in the process 
 
-FIGMA: we used figma to make the front end of the FISHBOOK app
+- FIGMA: we used figma to make the front end of the FISHBOOK app
 
-ProstgreSQL: Using object-oriented features of PostgreSQL, programmers can communicate with the database servers using objects in their code. Define complex, custom data types.
+- ProstgreSQL: Using object-oriented features of PostgreSQL, programmers can communicate with the database servers using objects in their code. Define complex, custom data types.
 
-Google Maps API: The Geocoding API is a service that accepts a place as an address, latitude and longitude coordinates, or place ID. It converts the address into latitude and longitude coordinates and a Place ID, or converts latitude and longitude coordinates or a Place ID into an address.
+- Google Maps API: The Geocoding API is a service that accepts a place as an address, latitude and longitude coordinates, or place ID. It converts the address into latitude and longitude coordinates and a Place ID, or converts latitude and longitude coordinates or a Place ID into an address.
 
-AWS Relational Database Services: Amazon Relational Database Service (Amazon RDS) is a collection of managed services that makes it simple to set up, operate, and scale databases in the cloud.
+- <u>AWS Relational Database Services</u>: Amazon Relational Database Service (Amazon RDS) is a collection of managed services that makes it simple to set up, operate, and scale databases in the cloud.
 
-AWS EC2: Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is part of Amazon Web Services (AWS)
+- AWS EC2: Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is part of Amazon Web Services (AWS)
 
-AWS Lambda: It was used for hybrid scaling
+- AWS Lambda: It was used for hybrid scaling
 
 # Data
 
-import psycopg2: Import using an import psycopg2 statement so you can communicate with the PostgreSQL database.
+- import psycopg2: Import using an import psycopg2 statement so you can communicate with the PostgreSQL database.
 
-import sqlite3: This will import the sqlite3 module into your Python program. You can then use this module to create and interact with SQLite databases.
+- import sqlite3: This will import the sqlite3 module into your Python program. You can then use this module to create and interact with SQLite databases.
 
-import psycopg2: psycopg2 is a Python driver for PostgreSQL. It's the most popular PostgreSQL database adapter for Python
+- import psycopg2: psycopg2 is a Python driver for PostgreSQL. It's the most popular PostgreSQL database adapter for Python
 
-import string: The Python string module provides several constants that are useful for checking to see if a character, slice, or string contains letters, digits, symbols, etc. To use these constants, we need to import the module into our code.
+- import string: The Python string module provides several constants that are useful for checking to see if a character, slice, or string contains letters, digits, symbols, etc. To use these constants, we need to import the module into our code.
 
-import geopandas as gpd: GeoPandas is an open source project to make working with geospatial data in Python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
+- import geopandas as gpd: GeoPandas is an open source project to make working with geospatial data in Python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types.
 
-import csv: The Import-Csv cmdlet creates table-like custom objects from the items in CSV files.
+- import csv: The Import-Csv cmdlet creates table-like custom objects from the items in CSV files.
 
