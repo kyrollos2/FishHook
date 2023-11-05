@@ -1,4 +1,4 @@
-import psycopg2 """LIBRARY USED TO CONNECT TO POSTGRE DB  HOSTED ON AWS SERVER"""
+import psycopg2 
 
 def insert_user_post(conn, user_id, body_of_water, post_town, post_state, date_, photo_url, fish_species, latitude, longitude):
     try:

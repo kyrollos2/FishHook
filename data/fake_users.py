@@ -1,83 +1,82 @@
-"""THIS CODE WAS WRITTEN BY ABIZAR CHAWALA
-HE WASNT SURE HOW TO PUSH IT TO THE REPOSITORY 
-AND HIS COMPUTER WAS REALLY SLOW SO I WILL SHOW HIM 
-HOW TO CONNECT TO GITHUB AT A LATER DATE
-
-Defraud Investors or show how we will rely on users to give us data? You Decide! 
-(its the latter)
-Faker is a library we used that contains methods to generate
-fake data of various datatypes and attributes, that can be used in tandem with 
-the .random method to generate random data.
-We used it because the only person who uses the things i make is my mom and my mom is only one data point-KG
-"""
-import string 
-import random
-from faker import Faker 
-import random
 import string
-import psycopg2 
+import random
 from faker import Faker
-import random
-import string
+import psycopg2
+from psycopg2 import sql
+
 f = Faker()
+
 def generate_user_id():
-    return random.randint(10000, 99999)
+    return None  # The "user_id" column is SERIAL and will be auto-generated.
 
 def generate_username():
     first_name = f.first_name()
     last_name = f.last_name()
     return f"{first_name.lower()}.{last_name.lower()}"
 
-
 def generate_email(username):
     domain = random.choice(['gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com'])
     return f"{username}@{domain}"
 
 def generate_password(length=8):
-    characters = string.ascii_letters + string.digits + string.punctuation
+    characters = string.ascii_letters  # Only letters (both uppercase and lowercase)
     return ''.join(random.choice(characters) for _ in range(length))
+   
 
+   
 
+def generate_profile_photo_url():
+    # You can customize this function to generate random URLs for profile photos.
+    # This is a placeholder, and you can implement it as needed.
+    return "https://example.com/profile-photo.jpg"  # Example URL
 
-users_data = []
-for _ in range(20000):
-    user_id = generate_user_id()
-    username = generate_username()
-    email = generate_email(username)
-    password = generate_password()
-    users_data.append({
-        'user_id': user_id,
-        'username': username,
-        'email': email,
-        'password': password
-    })
+def generate_user_data():
+    users_data = []
 
+    for _ in range(20000):
+        username = generate_username()
+        email = generate_email(username)
+        password_hash = generate_password(64)
+        profile_photo_url = generate_profile_photo_url()  # Customize this function as needed
+        users_data.append({
+            'email': email,
+            'username': username,
+            'password_hash': password_hash,
+            'profile_photo_url': profile_photo_url,
+        })
 
-conn = psycopg2.connect(
-    dbname='fish-1',
-    user='postgres',
-    password='Pratorian123$',
-    host='fish-1.cluster-cx0sld70xbt6.us-east-1.rds.amazonaws.com',
-    port='5432'
-)
+    return users_data
 
+def insert_users(conn, cursor, users_data):
+    for user in users_data:
+        insert_query = sql.SQL("""
+            INSERT INTO user_ (email, username, password_hash, profile_photo_url)
+            VALUES (%s, %s, %s, %s)
+        """)
+        cursor.execute(insert_query, (
+            user['email'],
+            user['username'],
+            user['password_hash'],
+            user['profile_photo_url'],
+        ))
 
-cursor = conn.cursor()
-for user in users_data:
-    insert_query = """
-    INSERT INTO your_user_table (user_id, username, email, password)
-    VALUES (%s, %s, %s, %s);
-    """
-    cursor.execute(insert_query, (
-        user['user_id'],
-        user['username'],
-        user['email'],
-        user['password']
-    ))
+def main():
+    conn = psycopg2.connect(
+        dbname='fish-1',
+        user='postgres',
+        password='Pratorian123',
+        host='fish-1.cluster-cx0sld70xbt6.us-east-1.rds.amazonaws.com',
+        port=5432
+    )
 
+    cursor = conn.cursor()
+    users_data = generate_user_data()
+    insert_users(conn, cursor, users_data)
+    conn.commit()
+    cursor.close()
+    conn.close()
 
-conn.commit()
-cursor.close()
-conn.close()
+    print("Data loaded successfully!")
 
-print ("data loaded successfully!")
+if __name__ == "__main__":
+    main()
