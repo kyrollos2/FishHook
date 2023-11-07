@@ -1,14 +1,9 @@
-""" the majority of this file was written by ChatGpt to the prompt 'I have this data file in this format 
-I want to iterate through it get a body of waters name, and  x and y coordinates and save it in my ProgestreSQL database
-that is hosted in an AWS cloud instance' I then did minor changes and added some exception handling as well as
-corrected the way the order was being loaded
-We imported geopandas to handle geopositional data for ALL of the lakes and still water
-in the US from a CSV file i extracted from the  
-(Geographical Index Survey)"""
+""" 
+This file iterates through a .csv file with geopositional data on all lakes and still
+water in the US it then pushes the data to the database that is hosted in an AWS cloud instance' I then did minor changes and added some exception handling as well as
+corrected the way the order was being loaded """
 import geopandas as gpd
 import csv
-
-import geopandas as gpd
 import psycopg2
 
 # Step 1: Load the NHD Data
@@ -30,18 +25,18 @@ try:
 
     water_body_data = [extract_coordinates_name(row) for _, row in water_bodies.iterrows()]
 
-    # Step 4: Establish a connection to your PostgreSQL database
+    # Establish connection to AWS instance
     conn = psycopg2.connect(
-        dbname='your_db_name',
-        user='your_db_user',
-        password='your_db_password',
-        host='your_db_host',
+        dbname='',
+        user=' ',
+        password='',
+        host='',
         port=5432
     )
 
     cursor = conn.cursor()
 
-    # Step 5: Insert Data into the PostgreSQL Table
+    # Insert Data into database
     for name, latitude, longitude in water_body_data:
         insert_query = """
             INSERT INTO your_water_bodies_table (name, latitude, longitude)
